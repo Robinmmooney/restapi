@@ -1,35 +1,18 @@
 const express = require('express');
 
-//setup express app
+// postman ver 6.5
+// const bodyParser = require('body-parser');
 
+// set up express app
 const app = express();
 
-app.get('/api',function(req, res){
-  console.log('GET request');
-  res.send({name:'Yoshi'});
-});
+// postman ver 6.5
+//app.use(bodyParser.json());
 
-//listens for requests
+// initialize routes
+app.use('/api', require('./routes/api'));
 
+// listen for requests
 app.listen(process.env.PORT || 4000, function(){
-  console.log('now listening for requests');
+    console.log('now listening for request');
 });
-
-
-
-
-
-
-// const express = require('express');
-
-// // set up express app
-// const app = express();
-
-// app.get('/api', function(req, res){
-//   res.send({ name: 'Yoshi' });
-// });
-
-// // listen for requests
-// app.listen(process.env.port || 4000, function(){
-//     console.log('now listening for requests');
-// });
