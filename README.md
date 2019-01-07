@@ -1,7 +1,7 @@
-# REST API
-Building a Rest API app
+# rest-api-playlist
+Course files for the REST API tutorial series on The Net Ninja Youtube channel
 
-- Using HTTP methods like POST, GET, PUT, DELETE
-- Creating an API using Node.js, Express and MongoDB
-- Testing the API using Postman
-- Creating a simple front-end to interact with the API
+# How to use
+Each branch corresponds to a specific lesson in the playlist. For example the lesson-10 branch will contain the code at the END of lesson 10. 
+
+Not every lesson has a corresponding branch (e.g. where the lesson added nothing else to the code).
