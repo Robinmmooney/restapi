@@ -7,7 +7,7 @@ var myHost = process.env.IP;
 const app = express();
 
 // connect to mongodb
-mongoose.connect('mongodb://' + myHost + '/ninjago');
+mongoose.connect('mongodb://' + myHost + '/ninjago2');
 mongoose.Promise = global.Promise;
 
 // use body-parser middleware
