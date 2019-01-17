@@ -16,7 +16,8 @@ router.post('/ninjas', function(req, res){
 
 // update a ninja in the db
 router.put('/ninjas/:id', function(req, res){
-    res.send({type: 'PUT'});
+    console.log('hello')
+    res.json({type: 'PUT'});
 });
 
 // delete a ninja from the db
