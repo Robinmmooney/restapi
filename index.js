@@ -5,9 +5,9 @@ const mongoose = require('mongoose');
 var myHost = process.env.IP;
 // set up express app
 const app = express();
-
 // connect to mongodb
-mongoose.connect('mongodb://' + myHost + '/ninjago2');
+mongoose.connect('mongodb://' + myHost + '/ninjago');
+//mongodb://rob:Justin88@ds041516.mlab.com:41516/ninjago
 mongoose.Promise = global.Promise;
 
 // use body-parser middleware
