@@ -10,6 +10,7 @@ mongoose.connect('mongodb://' + myHost + '/ninjago');
 //mongodb://rob:Justin88@ds041516.mlab.com:41516/ninjago
 mongoose.Promise = global.Promise;
 
+app.use(express.static('public'));
 // use body-parser middleware
 app.use(bodyParser.json());
 
